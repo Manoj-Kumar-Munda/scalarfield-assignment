@@ -2,9 +2,6 @@ import React from "react";
 import logo from "../assets/logo.svg";
 import { LuArrowLeftToLine } from "react-icons/lu";
 import { cn } from "../utils/cn";
-import { RiSearchLine } from "react-icons/ri";
-import { IoGlobeSharp } from "react-icons/io5";
-import { TfiBook } from "react-icons/tfi";
 import { GoArrowUpRight } from "react-icons/go";
 import thumbnail from "../assets/thumbnail.avif";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -13,11 +10,12 @@ import { CiMobile1 } from "react-icons/ci";
 import { BsDiscord } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import NavItems from "./NavItems";
+import { NavLinks } from "../utils/constants";
 
 const Sidebar = () => {
   return (
     <div className="fixed top-0 bottom-0 hidden sm:inline-block bg-creame py-4">
-      <div className="flex flex-col justify-between h-full max-w-[220px]">
+      <div className="flex flex-col justify-between h-full max-w-[220px] w-full">
         <div>
           <div className="inline-flex gap-6 items-center mx-2 ">
             <div className="w-[146px]">
@@ -55,15 +53,9 @@ const Sidebar = () => {
           </button>
 
           <div className="px-1 w-full space-y-1 ">
-            <NavItems title={"Home"}>
-              <RiSearchLine color="#4b5563" />
-            </NavItems>
-            <NavItems title={"Discover"}>
-              <IoGlobeSharp color="#4b5563" />
-            </NavItems>
-            <NavItems title={"Library"}>
-              <TfiBook color="#4b5563 " />
-            </NavItems>
+            {NavLinks.map((item) => (
+              <NavItems link={item} />
+            ))}
           </div>
         </div>
 
