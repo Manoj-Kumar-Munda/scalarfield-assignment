@@ -12,6 +12,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { CiMobile1 } from "react-icons/ci";
 import { BsDiscord } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
+import NavItems from "./NavItems";
 
 const Sidebar = () => {
   return (
@@ -54,35 +55,15 @@ const Sidebar = () => {
           </button>
 
           <div className="px-1 w-full space-y-1 ">
-            <div className="w-full rounded-md transition-300 hover:bg-black/5">
-              <a
-                href="#"
-                className="mx-4 px-1 py-2  flex gap-1.5 items-center cursor-pointer"
-              >
-                <RiSearchLine color="#4b5563" />
-                <span className="text-gray-600 font-semibold">Home</span>
-              </a>
-            </div>
-
-            <div className="w-full rounded-md transition-300 hover:bg-black/5">
-              <a
-                href="#"
-                className="mx-4 px-1 py-2  flex gap-1.5 items-center cursor-pointer"
-              >
-                <IoGlobeSharp color="#4b5563 " />
-                <span className="text-gray-600 font-semibold">Discover</span>
-              </a>
-            </div>
-
-            <div className="w-full rounded-md transition-300 hover:bg-black/5">
-              <a
-                href="#"
-                className="mx-4 px-1 py-2  flex gap-1.5 items-center cursor-pointer"
-              >
-                <TfiBook color="#4b5563 " />
-                <span className="text-gray-600 font-semibold">Library</span>
-              </a>
-            </div>
+            <NavItems title={"Home"}>
+              <RiSearchLine color="#4b5563" />
+            </NavItems>
+            <NavItems title={"Discover"}>
+              <IoGlobeSharp color="#4b5563" />
+            </NavItems>
+            <NavItems title={"Library"}>
+              <TfiBook color="#4b5563 " />
+            </NavItems>
           </div>
         </div>
 
