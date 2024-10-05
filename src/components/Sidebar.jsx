@@ -11,6 +11,7 @@ import { BsDiscord } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import NavItems from "./NavItems";
 import { NavLinks } from "../utils/constants";
+import { nanoid } from "nanoid";
 
 const Sidebar = () => {
   return (
@@ -54,7 +55,7 @@ const Sidebar = () => {
 
           <div className="px-1 w-full space-y-1 ">
             {NavLinks.map((item) => (
-              <NavItems link={item} />
+              <NavItems key={nanoid()} link={item} />
             ))}
           </div>
         </div>

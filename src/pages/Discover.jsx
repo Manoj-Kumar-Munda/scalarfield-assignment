@@ -4,26 +4,24 @@ import blog1 from "../assets/images/blog-1.jpg";
 import { topics } from "../utils/constants";
 import { nanoid } from "nanoid";
 import TopicBtn from "../components/TopicBtn";
-
+import Header from "../components/Header";
 
 const Discover = () => {
   return (
     <div className="w-full px-4">
       <div className="max-w-screen-lg mx-auto w-full border">
         <div className="inline-flex gap-2 items-center py-1">
-          <div className="w-8 h-8 overflow-hidden">
+          <div className="aspect-square w-6 md:w-8 overflow-hidden">
             <img src={globeIcon} alt="" className="w-full h-full" />
           </div>
-          <h1 className="text-3xl font-sans text-gray-600 leading-loose">
+          <h1 className="text-2xl md:text-3xl font-sans text-gray-600 leading-loose">
             Discover
           </h1>
         </div>
 
         <div className="absolute left-0 right-0 h-[1px] bg-black/5"></div>
-        <div className="grid grid-cols-12 md:gap-x-12 my-4">
-
-          
-
+        <div className="grid grid-cols-12 md:gap-x-12 ">
+          <Header />
           <div className="col-span-12 md:col-span-8">
             <div className="">
               <div className="aspect-[4/3] md:aspect-[3/1] w-full rounded-lg md:max-h-96 overflow-hidden">
@@ -59,7 +57,6 @@ const Discover = () => {
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import sportsIcon from "../assets/sports.svg";
 import financeIcon from "../assets/finance.svg";
 import screenIcon from "../assets/entertainment.svg";
 import artsIcon from "../assets/arts.svg";
+import startIcon from "../assets/star.svg";
 
 export const NavLinks = [
   {
@@ -26,6 +27,10 @@ export const NavLinks = [
 ];
 
 export const topics = [
+  {
+    title: "Top",
+    icon: startIcon,
+  },
   {
     title: "Tech & Science",
     icon: techIcon,
