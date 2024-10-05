@@ -9,8 +9,8 @@ import Header from "../components/Header";
 const Discover = () => {
   return (
     <div className="w-full px-4">
-      <div className="max-w-screen-lg mx-auto w-full border">
-        <div className="inline-flex gap-2 items-center py-1">
+      <div className="max-w-screen-lg mx-auto w-full">
+        <div className="inline-flex gap-2 items-center py-4">
           <div className="aspect-square w-6 md:w-8 overflow-hidden">
             <img src={globeIcon} alt="" className="w-full h-full" />
           </div>
