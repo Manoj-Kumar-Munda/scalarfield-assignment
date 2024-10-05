@@ -13,7 +13,7 @@ const Tab = React.forwardRef(({ topic, setActiveTabIndex}, ref) => {
       <div className="shrink-0">
         <img className="w-4 h-4" src={topic?.icon} alt={topic?.title} />
       </div>
-      <span className="font-semibold text-torquoise text-sm text-nowrap">
+      <span className="font-medium text-torquoise text-xs  text-nowrap">
         {topic?.title}
       </span>
     </button>

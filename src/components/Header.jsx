@@ -67,7 +67,7 @@ const Header = () => {
   return (
     <div
       id="header"
-      className="my-2 col-span-12 md:col-span-8 overflow-hidden relative"
+      className="my-3 col-span-12 md:col-span-8 overflow-hidden relative"
     >
       {forwardBtnVisible && (
         <button

@@ -1,10 +1,11 @@
 import React from "react";
 import globeIcon from "../assets/discover.svg";
-import blog1 from "../assets/images/blog-1.jpg";
 import { topics } from "../utils/constants";
 import { nanoid } from "nanoid";
 import TopicBtn from "../components/TopicBtn";
 import Header from "../components/Header";
+import { blogs } from "../utils/contents";
+import BlogCard from "../components/BlogCard";
 
 const Discover = () => {
   return (
@@ -23,15 +24,9 @@ const Discover = () => {
         <div className="grid grid-cols-12 md:gap-x-12 ">
           <Header />
           <div className="col-span-12 md:col-span-8">
-            <div className="">
-              <div className="aspect-[4/3] md:aspect-[3/1] w-full rounded-lg md:max-h-96 overflow-hidden">
-                <img
-                  src={blog1}
-                  alt=""
-                  className="w-full h-full object-cover object-[40%_20%]"
-                />
-              </div>
-            </div>
+            {blogs.map((blog) => (
+              <BlogCard key={nanoid()} blog={blog} />
+            ))}
           </div>
 
           <div className="hidden md:block col-span-4 relative w-full">
@@ -52,7 +47,7 @@ const Discover = () => {
 
               <div className="h-[1px] bg-gray-300 w-full"></div>
 
-              <button className="mt-4 mb-2 w-full bg-torquoise text-center text-white py-2 rounded-full">
+              <button className="font-medium mt-4 mb-2 w-full bg-torquoise text-center text-white py-2 rounded-full">
                 Save Interests
               </button>
             </div>
