@@ -6,55 +6,55 @@ import TopicBtn from "../components/TopicBtn";
 import Header from "../components/Header";
 import { blogs } from "../utils/contents";
 import BlogCard from "../components/BlogCard";
+import { Link } from "react-router-dom";
 
 const Discover = () => {
   return (
-    <div className="w-full px-4">
-      <div className="max-w-screen-lg mx-auto w-full">
-        <div className="inline-flex gap-2 items-center py-4">
-          <div className="aspect-square w-6 md:w-8 overflow-hidden">
-            <img src={globeIcon} alt="" className="w-full h-full" />
-          </div>
-          <h1 className="text-2xl md:text-3xl font-sans text-gray-600 leading-loose">
-            Discover
-          </h1>
+    <>
+      <div className="inline-flex gap-2 items-center py-4">
+        <div className="aspect-square w-6 md:w-8 overflow-hidden">
+          <img src={globeIcon} alt="" className="w-full h-full" />
+        </div>
+        <h1 className="text-2xl md:text-3xl font-sans text-gray-600 leading-loose">
+          Discover
+        </h1>
+      </div>
+
+      <div className="absolute left-0 right-0 h-[1px] bg-black/5"></div>
+      <div className="grid grid-cols-12 md:gap-x-12 ">
+        <Header />
+        <div className="col-span-12 md:col-span-8 space-y-4 mb-4">
+          {blogs.map((blog) => (
+            <Link className="block" to={`/blog/${blog.id}`}>
+              <BlogCard key={nanoid()} blog={blog} />
+            </Link>
+          ))}
         </div>
 
-        <div className="absolute left-0 right-0 h-[1px] bg-black/5"></div>
-        <div className="grid grid-cols-12 md:gap-x-12 ">
-          <Header />
-          <div className="col-span-12 md:col-span-8">
-            {blogs.map((blog) => (
-              <BlogCard key={nanoid()} blog={blog} />
-            ))}
-          </div>
+        <div className="hidden md:block col-span-4 relative w-full">
+          <div className=" bg-creame py-2 px-4 rounded-xl">
+            <h2 className="text-gray-600 font-semibold leading-loose">
+              Make it yours
+            </h2>
+            <p className="text-sm text-gray-600 font-semibold pr-4">
+              Select topics and interests to customize your Discover experience
+            </p>
 
-          <div className="hidden md:block col-span-4 relative w-full">
-            <div className=" bg-creame py-2 px-4 rounded-xl">
-              <h2 className="text-gray-600 font-semibold leading-loose">
-                Make it yours
-              </h2>
-              <p className="text-sm text-gray-600 font-semibold pr-4">
-                Select topics and interests to customize your Discover
-                experience
-              </p>
-
-              <div className="my-4 flex flex-wrap gap-2">
-                {topics?.slice(1,).map((topic) => (
-                  <TopicBtn key={nanoid()} topic={topic} />
-                ))}
-              </div>
-
-              <div className="h-[1px] bg-gray-300 w-full"></div>
-
-              <button className="font-medium mt-4 mb-2 w-full bg-torquoise text-center text-white py-2 rounded-full">
-                Save Interests
-              </button>
+            <div className="my-4 flex flex-wrap gap-2">
+              {topics?.slice(1).map((topic) => (
+                <TopicBtn key={nanoid()} topic={topic} />
+              ))}
             </div>
+
+            <div className="h-[1px] bg-gray-300 w-full"></div>
+
+            <button className="font-medium mt-4 mb-2 w-full bg-torquoise text-center text-white py-2 rounded-full">
+              Save Interests
+            </button>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

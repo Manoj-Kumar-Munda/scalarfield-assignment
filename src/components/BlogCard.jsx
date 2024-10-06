@@ -1,6 +1,8 @@
 import React from "react";
 import { CiBookmark } from "react-icons/ci";
 import avatar from "../assets/thumbnail.avif";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 const BlogCard = ({ blog }) => {
   return (
@@ -15,7 +17,11 @@ const BlogCard = ({ blog }) => {
       <div className="bg-creame py-4 px-4">
         <h1 className="text-lg font-semibold">{blog?.title}</h1>
 
-        <p className="mt-2 text-gray-500 line-clamp-2">{blog?.description}</p>
+        <p className="mt-2 text-gray-500 line-clamp-2">
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+            {blog?.description}
+          </ReactMarkdown>
+        </p>
         <div className="flex justify-between items-center my-3">
           <div className="inline-flex items-center gap-1">
             <div className="w-4 h-4 rounded-full overflow-hidden">
