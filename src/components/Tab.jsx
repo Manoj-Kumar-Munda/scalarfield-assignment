@@ -7,7 +7,7 @@ const Tab = React.forwardRef(({ topic, setActiveTabIndex}, ref) => {
       onClick={setActiveTabIndex}
       ref={ref}
       className={cn(
-        "flex items-center gap-1 px-3 py-2.5 rounded-lg shrink-0"
+        "flex items-center gap-1 px-3.5 py-3.5 rounded-lg shrink-0"
       )}
     >
       <div className="shrink-0">

@@ -28,6 +28,10 @@ export const NavLinks = [
 
 export const topics = [
   {
+    title: "Top",
+    icon: startIcon,
+  },
+  {
     title: "Tech & Science",
     icon: techIcon,
   },

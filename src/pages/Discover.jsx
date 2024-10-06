@@ -40,7 +40,7 @@ const Discover = () => {
               </p>
 
               <div className="my-4 flex flex-wrap gap-2">
-                {topics?.map((topic) => (
+                {topics?.slice(1,).map((topic) => (
                   <TopicBtn key={nanoid()} topic={topic} />
                 ))}
               </div>

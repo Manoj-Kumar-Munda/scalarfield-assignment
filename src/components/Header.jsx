@@ -89,7 +89,7 @@ const Header = () => {
 
       <div
         id="slider"
-        className="flex relative overflow-hidden scroll-smooth transition-300"
+        className="flex justify-between relative overflow-hidden scroll-smooth transition-300"
       >
         {topics?.map((topic, index) => (
           <Tab
@@ -100,9 +100,6 @@ const Header = () => {
             ref={(el) => (tabRefs.current[index] = el)}
           />
         ))}
-
-        <button></button>
-
         <button
           style={{ left: activeTabProps?.left, width: activeTabProps.width }}
           className="absolute transition-all duration-300 bottom-0 left-0 top-0 bg-torquoise/10 rounded-md z-20"
