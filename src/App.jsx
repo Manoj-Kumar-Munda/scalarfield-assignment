@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import Discover from "./pages/Discover";
 import Blog from "./pages/Blog";
+import BlogLayout from "./components/BlogLayout";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
       },
       {
         path: "blog/:id",
-        element: <Blog />,
+        element: <BlogLayout />,
       },
     ],
   },
