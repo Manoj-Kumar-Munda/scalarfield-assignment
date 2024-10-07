@@ -4,15 +4,21 @@ import { Outlet, useLocation } from "react-router-dom";
 import BlogHeader from "./BlogHeader";
 import Modal from "./Modal";
 import useApp from "../context/context";
+import { cn } from "../utils/cn";
 
 const Layout = () => {
   const { pathname } = useLocation();
-  const {isOpenModal} = useApp();
-  
+  const { isOpenModal, isSmSidebarOpen } = useApp();
+
   return (
     <div className="flex min-h-screen gap-1 bg-creame ">
-      { isOpenModal && <Modal />}
-      <div className=" w-0 md:max-w-[220px] md:w-full">
+      {isOpenModal && <Modal />}
+      <div
+        className={cn(
+          " w-0 md:max-w-[220px] md:w-full transition-300",
+          isSmSidebarOpen && "md:max-w-[90px] w-full"
+        )}
+      >
         <Sidebar />
       </div>
 
