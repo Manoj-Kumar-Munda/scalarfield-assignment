@@ -5,9 +5,17 @@ const AppContext = createContext();
 export const AppContextProvider = ({ children }) => {
   const [isOpenSidebar, setIsOpenSidebar] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const [blogTitle, setBlogTitle] = useState();
   return (
     <AppContext.Provider
-      value={{ isOpenModal, isOpenSidebar, setIsOpenSidebar, setIsOpenModal }}
+      value={{
+        isOpenModal,
+        isOpenSidebar,
+        setIsOpenSidebar,
+        setIsOpenModal,
+        blogTitle,
+        setBlogTitle,
+      }}
     >
       {children}
     </AppContext.Provider>

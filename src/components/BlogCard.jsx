@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
 const BlogCard = ({ blog }) => {
+
   return (
     <div className="rounded-xl overflow-hidden">
       <div className="aspect-[4/3] md:aspect-[3/1] w-full md:max-h-96 overflow-hidden">

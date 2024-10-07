@@ -3,11 +3,32 @@ import { FaShare } from "react-icons/fa6";
 import { FiLink } from "react-icons/fi";
 import { GoBookmark } from "react-icons/go";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
+import useApp from "../context/context";
+import { AnimatePresence, motion } from "framer-motion";
+import { nanoid } from "nanoid";
 
 const BlogHeader = () => {
+  const { blogTitle } = useApp();
+  console.log(blogTitle);
+
   return (
     <>
-      <div className="sticky top-0 left-4 right-4 h-12 bg-white px-4">
+      <div className="sticky top-0 left-4 right-4 h-12 bg-white px-4 rounded-xl">
+        <div className="absolute inset-0 grid place-content-center">
+          <AnimatePresence>
+            {blogTitle && (
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10 }}
+                key={nanoid()}
+                className="font-medium"
+              >
+                {blogTitle}
+              </motion.span>
+            )}
+          </AnimatePresence>
+        </div>
         <div className="py-2 flex justify-end">
           <div className="inline-flex items-center gap-1.5">
             <button className="border-none aspect-square w-8 rounded-md transition-300 flex justify-center items-center hover:bg-gray-200">

@@ -1,19 +1,25 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { blogs } from "../utils/contents";
 import Blog from "../pages/Blog";
 import { cn } from "../utils/cn";
 import { nanoid } from "nanoid";
-import { HiOutlineDotsHorizontal } from "react-icons/hi";
-import { GoBookmark } from "react-icons/go";
-import { FiLink } from "react-icons/fi";
-import { FaShare } from "react-icons/fa6";
+import useApp from "../context/context";
 
 const BlogLayout = () => {
   const [subHeadings, setSubHeadings] = useState([]);
+  const { setBlogTitle } = useApp();
   const [activeSubHeading, setActiveSubHeading] = useState(0);
   const { id } = useParams();
   const blog = useMemo(() => blogs.find((blog) => blog.id == id), []);
+
+  useEffect(() => {
+    if (activeSubHeading > 0) {
+      setBlogTitle(blog?.title);
+    } else {
+      setBlogTitle(null);
+    }
+  }, [activeSubHeading]);
 
   return (
     <div>
