@@ -15,7 +15,7 @@ import useApp from "../context/context";
 import { Logo } from "./Logo";
 
 const LgSidebar = () => {
-  const { isSmSidebarOpen, setIsSmSidebarOpen } = useApp();
+  const { setIsOpenModal, setIsSmSidebarOpen } = useApp();
 
   return (
     <>

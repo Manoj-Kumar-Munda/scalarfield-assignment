@@ -7,7 +7,7 @@ const ToggleBtn = () => {
   const [isOn, setIsOn] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
-  const {pathname} = useLocation();
+  const { pathname } = useLocation();
   return (
     <div
       className="flex gap-4 items-center"
@@ -15,12 +15,12 @@ const ToggleBtn = () => {
       onMouseOut={() => setShowPopup(false)}
     >
       <AnimatePresence>
-        {pathname?.includes?.blogs &&  showPopup && (
+        {pathname?.includes("blog") && showPopup && (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 100, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            transition={{delay:0.1}}
+            transition={{ delay: 0.1 }}
             className="absolute bg-white border rounded-md gap-2 bottom-12 right-14 p-3 max-w-80 w-full"
           >
             <div className="flex flex-col gap-1 items-start">
@@ -62,7 +62,14 @@ const ToggleBtn = () => {
           )}
         ></motion.div>
       </button>
-      <span className={cn("text-sm font-medium text-gray-600", isOn && "text-torquoise")}>Pro</span>
+      <span
+        className={cn(
+          "text-sm font-medium text-gray-600",
+          isOn && "text-torquoise"
+        )}
+      >
+        Pro
+      </span>
     </div>
   );
 };

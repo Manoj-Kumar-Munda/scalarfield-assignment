@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Modal = () => {
   const modalRef = useRef();
   const { setIsOpenModal } = useApp();
-  
+
   useEffect(() => {
     const handler = (event) => {
       if (!modalRef.current || modalRef.current.contains(event.target)) {
@@ -24,7 +24,7 @@ const Modal = () => {
     };
   }, []);
   return (
-    <div className="z-50 fixed inset-0 bg-creame/50 backdrop-blur-sm">
+    <div className="z-[999] fixed inset-0 bg-creame/50 backdrop-blur-sm">
       <div className="flex justify-center items-center w-full h-full">
         <AnimatePresence>
           <motion.div

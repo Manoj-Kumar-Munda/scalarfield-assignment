@@ -10,13 +10,16 @@ const Layout = () => {
   const { pathname } = useLocation();
   const { isOpenModal, isSmSidebarOpen } = useApp();
 
+  console.log(isOpenModal);
+  
+
   return (
     <div className="flex min-h-screen gap-1 bg-creame ">
       {isOpenModal && <Modal />}
       <div
         className={cn(
           " w-0 md:max-w-[220px] md:w-full transition-300",
-          isSmSidebarOpen && "md:max-w-[90px] w-full"
+          isSmSidebarOpen && "w-0 md:max-w-[90px]"
         )}
       >
         <Sidebar />

@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "../utils/cn";
 
-const Tab = React.forwardRef(({ topic, setActiveTabIndex}, ref) => {
+const Tab = React.forwardRef(({ topic, setActiveTabIndex }, ref) => {
   return (
     <button
       onClick={setActiveTabIndex}
