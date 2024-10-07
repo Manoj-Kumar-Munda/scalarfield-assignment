@@ -18,7 +18,7 @@ const Discover = () => {
           Discover
         </h1>
       </div>
-      <div className="h-[1px] bg-gray-200 absolute z-50 left-0 right-0"></div>
+      <div className="h-[1px] bg-gray-200 absolute z-40 left-0 right-0"></div>
 
       <div className="grid grid-cols-12 md:gap-x-12 ">
         <Header />

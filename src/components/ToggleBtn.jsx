@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../utils/cn";
+import { useLocation } from "react-router-dom";
 
 const ToggleBtn = () => {
   const [isOn, setIsOn] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+
+  const {pathname} = useLocation();
   return (
     <div
       className="flex gap-4 items-center"
@@ -12,7 +15,7 @@ const ToggleBtn = () => {
       onMouseOut={() => setShowPopup(false)}
     >
       <AnimatePresence>
-        {showPopup && (
+        {pathname?.includes?.blogs &&  showPopup && (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 100, scale: 1 }}

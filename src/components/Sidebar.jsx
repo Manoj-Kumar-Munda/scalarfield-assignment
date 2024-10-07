@@ -12,8 +12,11 @@ import { FaXTwitter } from "react-icons/fa6";
 import NavItems from "./NavItems";
 import { NavLinks } from "../utils/constants";
 import { nanoid } from "nanoid";
+import useApp from "../context/context";
 
 const Sidebar = () => {
+  const { setIsOpenModal } = useApp();
+
   return (
     <div className="fixed top-0 bottom-0 hidden sm:inline-block bg-creame py-4">
       <div className="flex flex-col justify-between h-full max-w-[220px] w-full">
@@ -36,6 +39,7 @@ const Sidebar = () => {
           </div>
 
           <button
+            onClick={() => setIsOpenModal(true)}
             className={cn(
               " my-5 border-2 border-transparent flex pl-3 pr-2 mx-auto items-center justify-between gap-5 bg-white py-1.5 rounded-full transition-300 hover:border-torquoise"
             )}
