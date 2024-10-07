@@ -24,7 +24,7 @@ const BlogLayout = () => {
   }, [activeSubHeading]);
 
   return (
-    <div className="relative">
+    <div className="relative my-2">
       <div className="w-full aspect-[3/1] rounded-md overflow-hidden shadow-lg">
         <img
           src={blog?.image}

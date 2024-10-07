@@ -6,27 +6,25 @@ import TopicBtn from "../components/TopicBtn";
 import Header from "../components/Header";
 import { blogs } from "../utils/contents";
 import BlogCard from "../components/BlogCard";
-import { Link } from "react-router-dom";
 
 const Discover = () => {
   return (
     <>
-      <div className="inline-flex gap-2 items-center py-4">
+      <div className="inline-flex gap-2 items-center py-3 sm:py-3.5">
         <div className="aspect-square w-6 md:w-8 overflow-hidden">
           <img src={globeIcon} alt="" className="w-full h-full" />
         </div>
-        <h1 className="text-2xl md:text-3xl font-sans text-gray-600 leading-loose">
+        <h1 className="text-2xl md:text-3xl font-sans text-gray-600">
           Discover
         </h1>
       </div>
+      <div className="h-[1px] bg-gray-200 absolute z-50 left-0 right-0"></div>
 
       <div className="grid grid-cols-12 md:gap-x-12 ">
         <Header />
         <div className="col-span-12 md:col-span-8 space-y-4 mb-4">
           {blogs.map((blog) => (
-            <Link key={nanoid()} className="block" to={`/blog/${blog.id}`}>
-              <BlogCard key={nanoid()} blog={blog} />
-            </Link>
+            <BlogCard key={nanoid()} blog={blog} />
           ))}
         </div>
 
@@ -45,7 +43,7 @@ const Discover = () => {
               ))}
             </div>
 
-            <div className="h-[1px] bg-gray-300 w-full"></div>
+            <div className="h-[1px] bg-gray-300 w-full "></div>
 
             <button className="font-medium mt-4 mb-2 w-full bg-torquoise text-center text-white py-2 rounded-full">
               Save Interests

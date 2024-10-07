@@ -14,7 +14,7 @@ const Layout = () => {
       <div className="relative bg-white mt-2 mr-2 flex-1 rounded-xl ">
         {pathname?.includes("blog") && <BlogHeader />}
         <div className="w-full px-4">
-          <div className="max-w-screen-lg mx-auto w-full my-2">
+          <div className="max-w-screen-lg mx-auto w-full">
             <Outlet />
           </div>
         </div>
