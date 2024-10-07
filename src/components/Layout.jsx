@@ -5,8 +5,6 @@ import BlogHeader from "./BlogHeader";
 
 const Layout = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
-
   return (
     <div className="flex min-h-screen gap-1 bg-creame ">
       <div className=" w-0 md:max-w-[220px] md:w-full">

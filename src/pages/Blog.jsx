@@ -24,7 +24,6 @@ const Blog = ({ setActiveSubHeading, setSubHeadings }) => {
     subHeadingRef.current.forEach((elem, index) => {
       const rect = elem.getBoundingClientRect();
       if (rect.top <= 100 && rect.bottom > 0) {
-        console.log(elem?.innerText, index);
         setActiveSubHeading(index + 1);
       }
     });

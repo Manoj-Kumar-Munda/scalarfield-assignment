@@ -9,7 +9,6 @@ import { nanoid } from "nanoid";
 
 const BlogHeader = () => {
   const { blogTitle } = useApp();
-  console.log(blogTitle);
 
   return (
     <>
