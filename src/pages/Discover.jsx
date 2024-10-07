@@ -6,6 +6,7 @@ import TopicBtn from "../components/TopicBtn";
 import Header from "../components/Header";
 import { blogs } from "../utils/contents";
 import BlogCard from "../components/BlogCard";
+import TabsContainer from "../components/TabsContainer";
 
 const Discover = () => {
   return (
@@ -21,7 +22,7 @@ const Discover = () => {
       <div className="h-[1px] bg-gray-200 absolute z-40 left-0 right-0"></div>
 
       <div className="grid grid-cols-12 md:gap-x-12 ">
-        <Header />
+        <TabsContainer />
         <div className="col-span-12 md:col-span-8 space-y-4 mb-4">
           {blogs.map((blog) => (
             <BlogCard key={nanoid()} blog={blog} />

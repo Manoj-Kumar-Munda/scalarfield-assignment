@@ -13,7 +13,7 @@ const BlogHeader = () => {
   return (
     <>
       <div className="sticky z-50 top-0 left-4 right-4 h-12 bg-white px-4 rounded-xl">
-        <div className="absolute inset-0 grid place-content-center">
+        <div className="absolute inset-0 grid items-center  sm:place-content-center">
           <AnimatePresence>
             {blogTitle && (
               <motion.span
