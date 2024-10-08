@@ -1,5 +1,5 @@
 import React from "react";
-import globeIcon from "../assets/discover.svg";
+
 import { topics } from "../utils/constants";
 import { nanoid } from "nanoid";
 import TopicBtn from "../components/TopicBtn";
@@ -11,16 +11,8 @@ import TabsContainer from "../components/TabsContainer";
 const Discover = () => {
   return (
     <>
-      <div className="inline-flex gap-2 items-center py-3 sm:py-3.5">
-        <div className="aspect-square w-6 md:w-8 overflow-hidden">
-          <img src={globeIcon} alt="" className="w-full h-full" />
-        </div>
-        <h1 className="text-2xl md:text-3xl font-sans text-gray-600">
-          Discover
-        </h1>
-      </div>
+      <Header />
       <div className="h-[1px] bg-gray-200 absolute z-40 left-0 right-0"></div>
-
       <div className="grid grid-cols-12 md:gap-x-12 ">
         <TabsContainer />
         <div className="col-span-12 md:col-span-8 space-y-4 mb-4">

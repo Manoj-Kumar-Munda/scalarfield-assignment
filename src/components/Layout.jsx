@@ -5,6 +5,7 @@ import BlogHeader from "./BlogHeader";
 import Modal from "./Modal";
 import useApp from "../context/context";
 import { cn } from "../utils/cn";
+import MobileNav from "./MobileNav";
 
 const Layout = () => {
   const { pathname } = useLocation();
@@ -25,7 +26,7 @@ const Layout = () => {
         <Sidebar />
       </div>
 
-      <div className="relative bg-white mt-2 mr-2 flex-1 rounded-xl ">
+      <div className="relative bg-white sm:mt-2 sm:mr-2 flex-1 rounded-xl ">
         {pathname?.includes("blog") && <BlogHeader />}
         <div className="w-full px-4">
           <div className="max-w-screen-lg mx-auto w-full">
@@ -33,6 +34,8 @@ const Layout = () => {
           </div>
         </div>
       </div>
+
+      <MobileNav />
     </div>
   );
 };

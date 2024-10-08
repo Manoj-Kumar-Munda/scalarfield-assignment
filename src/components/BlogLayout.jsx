@@ -57,9 +57,9 @@ const BlogLayout = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-8 left-[220px] right-0  ">
-        <div className="max-w-screen-lg mx-auto w-full  grid grid-cols-12  pr-6">
-          <div className=" col-span-8 bg-creame p-2 rounded-full  w-full flex justify-center items-center">
+      <div className="fixed bottom-20 sm:bottom-8 sm:left-[220px] left-4  right-4 sm:right-0  ">
+        <div className="max-w-screen-lg mx-auto w-full  sm:grid sm:grid-cols-12 sm:pr-6">
+          <div className="col-span-12 sm:col-span-8 bg-transparent sm:bg-creame p-2 rounded-full  w-full flex justify-center items-center">
             <div className="relative bg-white w-full h-full rounded-full border-2 py-3 flex gap-2 justify-between items-center ">
               <div className=" bg-inherit flex flex-col w-full justify-center ml-4 ">
                 <input

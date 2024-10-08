@@ -6,6 +6,7 @@ import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import useApp from "../context/context";
 import { AnimatePresence, motion } from "framer-motion";
 import { nanoid } from "nanoid";
+import logo from "../assets/black-logo.svg";
 
 const BlogHeader = () => {
   const { blogTitle } = useApp();
@@ -14,6 +15,10 @@ const BlogHeader = () => {
     <>
       <div className="sticky z-50 top-0 left-4 right-4 h-12 bg-white px-4 rounded-xl">
         <div className="absolute inset-0 grid items-center  sm:place-content-center">
+          <div className="w-32 sm:hidden">
+            <img src={logo} className="w-full" />
+          </div>
+
           <AnimatePresence>
             {blogTitle && (
               <motion.span
@@ -21,7 +26,7 @@ const BlogHeader = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
                 key={nanoid()}
-                className="font-medium"
+                className="hidden sm:inline-block font-medium"
               >
                 {blogTitle}
               </motion.span>
@@ -33,17 +38,25 @@ const BlogHeader = () => {
             <button className="border-none aspect-square w-8 rounded-md transition-300 flex justify-center items-center hover:bg-gray-200">
               <HiOutlineDotsHorizontal />
             </button>
-            <button className="border aspect-square w-8 rounded-md transition-300 flex justify-center items-center hover:bg-gray-200">
+            <button className="border aspect-square w-8 rounded-md transition-300 flex justify-center items-center bg-gray-200 sm:bg-white hover:bg-gray-200">
               <GoBookmark />
             </button>
 
-            <button className="border-none aspect-square w-8 rounded-md transition-300 flex justify-center items-center bg-teal-600 hover:bg-torquoise/80">
+            <button className="hidden   border-none aspect-square w-8 rounded-md transition-300 sm:flex justify-center items-center bg-teal-600 hover:bg-torquoise/80">
               <FiLink color="#fff" />
             </button>
 
-            <button className="bg-teal-600 hover:bg-torquoise/80 text-sm h-8 px-4 rounded-md flex gap-1 items-center transition-300">
-              <FaShare color="#fff" />
-              <span className="font-medium text-white ">Share</span>
+            <button className="bg-gray-200 sm:bg-teal-600 hover:bg-torquoise/80 text-sm h-8 px-2.5 sm:px-4 rounded-md flex gap-1 items-center transition-300">
+              <div className="hidden sm:inline-block">
+                <FaShare color="#fff" />
+              </div>
+
+              <div className="sm:hidden">
+                <FaShare color="#000" />
+              </div>
+              <span className="hidden sm:inline-block font-medium text-white ">
+                Share
+              </span>
             </button>
           </div>
         </div>
