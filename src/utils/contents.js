@@ -67,14 +67,61 @@ Both institutions will need to overhaul their admissions processes to comply wit
     title: "OpenAI Raises $6.6B",
     image: pic5,
     description:
-    `<p id="introduction">OpenAI, the company behind ChatGPT, has secured a historic $6.6 billion funding round, valuing the artificial intelligence firm at $157 billion and solidifying its position as one of the world's most valuable startups, as reported by multiple sources.</p>`
+    `<p class="has-line-data" data-line-start="0" data-line-end="1">OpenAI, the company behind ChatGPT, has secured a historic $6.6 billion funding round, valuing the artificial intelligence firm at $157 billion and solidifying its position as one of the world’s most valuable startups, as reported by multiple sources.</p>
+<h1 className="text-2xl my-2" class="code-line" data-line-start=2 data-line-end=3 ><a id="OpenAIs_Funding_2"></a>OpenAI’s Funding</h1>
+<p class="has-line-data" data-line-start="3" data-line-end="4">OpenAI’s recent $6.6 billion funding round has set new records in the venture capital world and solidified the company’s position as a leader in artificial intelligence. Here are key details about this historic investment:</p>
+<ul className="list-disc list-inside pl-4">
+<li class="has-line-data" data-line-start="4" data-line-end="5">Led by Thrive Capital, with participation from Microsoft, Nvidia, SoftBank, and other major investors</li>
+<li class="has-line-data" data-line-start="5" data-line-end="6">Valuation of $157 billion, making OpenAI one of the top three venture-backed startups globally.</li>
+<li class="has-line-data" data-line-start="6" data-line-end="8">Largest venture capital deal in history.</li>
+</ul>
+<p class="has-line-data" data-line-start="8" data-line-end="10">OpenAI’s cumulative funding now stands at around $17.8 billion. This significant financial backing underscores the company’s robust growth trajectory and its appeal to investors who are eager to support AI innovation.<br>
+This massive influx of capital will enable OpenAI to accelerate its AI research, expand computing capacity, and develop new tools to tackle complex problems15. The funding also highlights the tech industry’s confidence in AI’s potential and willingness to finance the costly research driving advancements in this field</p>
+<h1 className="text-2xl my-2" class="code-line" data-line-start=11 data-line-end=12 ><a id="Future_Plans_PostFunding_11"></a>Future Plans Post-Funding</h1>
+<p class="has-line-data" data-line-start="12" data-line-end="13">OpenAI plans to leverage its substantial new funding to accelerate its AI research and development efforts. The company aims to double down on frontier AI research, increase its computing capacity, and continue building tools to help solve complex problems. Specific areas of focus include:</p>
+<ul className="list-disc list-inside pl-4">
+<li class="has-line-data" data-line-start="13" data-line-end="14">Expanding AI infrastructure, potentially developing custom AI chips and datacenters to reduce reliance on Nvidia hardware.</li>
+<li class="has-line-data" data-line-start="14" data-line-end="15">Securing more data licensing agreements with providers like Reddit and Condé Nast to enhance training datasets.</li>
+<li class="has-line-data" data-line-start="15" data-line-end="16">Exploring longer-term, capital-intensive projects that could shape the future of AI technology.</li>
+<li class="has-line-data" data-line-start="16" data-line-end="18">Recruiting top talent in the competitive AI field to maintain its leadership position.</li>
+</ul>
+<p class="has-line-data" data-line-start="18" data-line-end="19">OpenAI also intends to strengthen collaborations with key partners, including U.S. and allied governments, to unlock the full potential of AI technology while addressing ethical and safety concerns</p>
+<h1 className="text-2xl my-2" class="code-line" data-line-start=20 data-line-end=21 ><a id="Financial_Projections_and_Challenges_20"></a>Financial Projections and Challenges</h1>
+<p class="has-line-data" data-line-start="21" data-line-end="22">OpenAI’s financial projections are ambitious, with the company forecasting sales of around $3.7 billion in the current financial year1. Despite this impressive growth, the company faces significant challenges in terms of operational costs. OpenAI is reportedly burning through billions to train and productize its AI systems, with estimates suggesting it has spent roughly $7 billion on model training and $1.5 billion on staffing:</p>
+<ul className="list-disc list-inside pl-4">
+<li class="has-line-data" data-line-start="22" data-line-end="23">Projected revenue for 2029: $100 billion</li>
+<li class="has-line-data" data-line-start="23" data-line-end="24">Estimated current losses: About $5 billion this year.</li>
+<li class="has-line-data" data-line-start="24" data-line-end="26">Daily operational cost for ChatGPT alone: Approximately $700,000.</li>
+</ul>
+<p class="has-line-data" data-line-start="26" data-line-end="27">The company’s substantial funding round is crucial to sustain its operations and fuel future growth. However, OpenAI must navigate the delicate balance between rapid expansion and managing its considerable expenses to achieve long-term profitability and realize its ambitious financial projections.</p>
+<h1 className="text-2xl my-2" class="code-line" data-line-start=28 data-line-end=29 ><a id="Corporate_Structure_and_Leadership_28"></a>Corporate Structure and Leadership</h1>
+<p class="has-line-data" data-line-start="29" data-line-end="30">Discussions are underway regarding OpenAI’s potential transition to a formal “for-profit” structure, which could provide greater flexibility in raising capital and pursuing long-term projects12. Despite this shift, the company has emphasized that its non-profit arm will continue to exist and remain core to its mission3. Recent leadership changes have marked this period of growth, including the departure of CTO Mira Murati3. CEO Sam Altman has addressed speculation about receiving equity in the company, denying reports of a significant stake4. The board, led by chairman Bret Taylor, has considered compensating Altman with equity, though no specific proposals or decisions have been finalized.</p>`
   },
   {
     id: 4,
     title: "Reddit's Protest Clampdown",
     image: pic4,
     description:
-    `<p id="introduction">Reddit has implemented a significant policy change restricting moderators' ability to alter subreddit visibility settings, a move aimed at preventing large-scale protests on the platform. According to reports from Tech.co and Slashdot, this decision comes in response to last year's widespread protests against API pricing changes and requires moderators to obtain admin approval before switching subreddits between public, private, or NSFW status.</p>`
+    `<p class="has-line-data" data-line-start="0" data-line-end="1">Reddit has implemented a significant policy change restricting moderators’ ability to alter subreddit visibility settings, a move aimed at preventing large-scale protests on the platform. According to reports from <a href="http://Tech.co">Tech.co</a> and Slashdot, this decision comes in response to last year’s widespread protests against API pricing changes and requires moderators to obtain admin approval before switching subreddits between public, private, or NSFW status.</p>
+<h1 className="text-2xl my-3" class="code-line" data-line-start=2 data-line-end=3 ><a id="Reddits_New_Policy_Changes_2"></a>Reddit’s New Policy Changes</h1>
+<p class="has-line-data" data-line-start="3" data-line-end="4">Reddit’s recent policy changes aim to tighten control over subreddit visibility and protest capabilities. These changes have significant implications for moderators and the platform’s overall functionality:</p>
+<ul className="list-disc list-inside pl-4">
+<li class="has-line-data" data-line-start="4" data-line-end="5">Moderators now need Reddit’s permission to change a subreddit’s status between public, private, or restricted.</li>
+<li class="has-line-data" data-line-start="5" data-line-end="6">The same approval process applies to switching between Safe For Work (SFW) and Not Safe For Work (NSFW) designations.</li>
+<li class="has-line-data" data-line-start="6" data-line-end="7">Automatic approval is granted for communities with fewer than 5,000 members or those less than 30 days old.</li>
+<li class="has-line-data" data-line-start="7" data-line-end="8">Temporary restrictions (up to 7 days) can still be implemented without approval.</li>
+<li class="has-line-data" data-line-start="8" data-line-end="9">Reddit promises to respond to change requests within 24 hours, 365 days a year.</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">The policy aims to prevent sudden loss of access to public communities and their content.</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11">Exceptions are made for episodic events, crises, safety issues, or when moderators need an indefinite break.</li>
+<li class="has-line-data" data-line-start="11" data-line-end="13">Reddit emphasizes that protests are allowed but not at the expense of public communities.</li>
+</ul>
+<p class="has-line-data" data-line-start="13" data-line-end="14">These changes represent a significant shift in Reddit’s approach to community management and user-driven actions, potentially altering the dynamics between the platform, its moderators, and its user base.</p>
+<h1 className="text-2xl my-3" class="code-line" data-line-start=15 data-line-end=16 ><a id="Rationale_for_Visibility_Restrictions_15"></a>Rationale for Visibility Restrictions</h1>
+<p class="has-line-data" data-line-start="16" data-line-end="17">The policy change aims to protect Reddit’s long-term health and prevent actions that “deliberately cause harm” to the platform, according to Laura Nestler, Reddit’s VP of community1. By requiring approval for visibility changes, Reddit seeks to ensure public communities remain accessible to all users and honor the expectations they set1. This move is seen as a response to last year’s protests, where thousands of subreddits went “dark” to oppose API pricing changes23. Critics argue that the new policy is an attempt to appease shareholders and protect Reddit’s share price, with some users suggesting it’s a blatant effort to prevent major disruptions that could negatively impact the company’s valuation.</p>
+<h1 className="text-2xl my-3" class="code-line" data-line-start=18 data-line-end=19 ><a id="Impact_on_Moderator_Protests_18"></a>Impact on Moderator Protests</h1>
+<p class="has-line-data" data-line-start="19" data-line-end="20">The new policy significantly curtails moderators’ ability to organize large-scale protests on Reddit. By requiring admin approval for visibility changes, the platform prevents subreddits from suddenly going “dark” or private - a tactic previously used to protest company decisions12. This approval process gives Reddit more control over community visibility changes and makes it harder for moderators to quickly respond to contentious platform changes. Some users view this as a curtailment of moderators’ power to protest, with concerns raised about the potential decline in moderator morale and its impact on content quality.</p>
+<h1 className="text-2xl my-3" class="code-line" data-line-start=21 data-line-end=22 ><a id="Potential_Consequences_for_Community_21"></a>Potential Consequences for Community</h1>
+<p class="has-line-data" data-line-start="22" data-line-end="23">The policy shift could lead to significant changes in Reddit’s community dynamics. Experienced moderators may retire or reduce their involvement, potentially resulting in a decline in moderation standards across various subreddits1. This could contribute to a general decline in content quality, with some users already noting an increase in AI-generated posts and comments1. In response to these restrictions, users may develop alternative protest methods, such as coordinated posting of protest content or intentionally allowing low-quality posts to flood subreddits2. These changes represent a fundamental alteration in the power balance between Reddit’s administration and its user base, potentially impacting the platform’s community-driven nature and unique character</p>`
   },
   {
     id: 5,
