@@ -34,7 +34,33 @@ export const blogs = [
     title: "California Bans Legacy Admissions",
     image: pic2,
     description:
-    `<p id="introduction">California has taken a bold step in higher education reform by banning legacy and donor admissions preferences at private colleges and universities. According to reports from Fortune and NBC Bay Area, Governor Gavin Newsom signed legislation prohibiting these practices, making California the second state after Maryland to extend such a ban to private institutions.</p>`
+    `<p class="has-line-data" data-line-start="0" data-line-end="1">California has taken a bold step in higher education reform by banning legacy and donor admissions preferences at private colleges and universities. According to reports from Fortune and NBC Bay Area, Governor Gavin Newsom signed legislation prohibiting these practices, making California the second state after Maryland to extend such a ban to private institutions.</p>
+<h1 className="text-2xl my-3" class="code-line" data-line-start=2 data-line-end=3 ><a id="Californias_Legacy_Admissions_Ban_2"></a>California’s Legacy Admissions Ban</h1>
+<p class="has-line-data" data-line-start="3" data-line-end="4">The new law, signed by Governor Gavin Newsom on September 30, 2024, prohibits private, nonprofit colleges in California from considering legacy status or donor relationships in their admissions decisions12. Set to take effect on September 1, 2025, the legislation (AB 1780) was authored by Assemblymember Phil Ting and applies to prestigious institutions like Stanford University and the University of Southern California34. This ban extends to public universities as well, although the University of California system had already eliminated legacy preferences in 19985. Under the new law, all affected institutions must submit annual reports to demonstrate compliance, with violators potentially being named on the state Department of Justice’s website.</p>
+<h1 className="text-2xl my-3" class="code-line" data-line-start=5 data-line-end=6 ><a id="Impact_on_Stanford_and_USC_5"></a>Impact on Stanford and USC</h1>
+<p class="has-line-data" data-line-start="6" data-line-end="8">The ban on legacy admissions will significantly impact prestigious private universities in California, particularly Stanford University and the University of Southern California (USC). At Stanford, approximately 16% of the Class of 2023 were children of Stanford graduates. Similarly, USC offered admission to 1,791 undergraduate applicants who were relatives of donors or alumni in 2023, representing about 14.5% of admitted students.<br>
+Both institutions will need to overhaul their admissions processes to comply with the new law. Stanford has indicated it will review its admissions policies before the law takes effect in 20251. USC has already stated it would comply with the law if signed. This shift is expected to increase opportunities for first-generation college students and those from underrepresented backgrounds, potentially altering the demographic makeup of incoming classes at these elite institutions.</p>
+<h1 className="text-2xl my-3" class="code-line" data-line-start=9 data-line-end=10 ><a id="Promoting_Equal_Opportunities_9"></a>Promoting Equal Opportunities</h1>
+<p class="has-line-data" data-line-start="10" data-line-end="11">California’s ban on legacy admissions aims to promote equal opportunities in higher education. The new law reflects a commitment to meritocracy and fairness in college admissions. Key aspects of the legislation and its intended impact include:</p>
+<ul className="list-disc list-inside pl-4">
+<li class="has-line-data" data-line-start="11" data-line-end="12">Prohibits consideration of legacy status or donor relationships in admissions decisions at private, nonprofit colleges.</li>
+<li class="has-line-data" data-line-start="12" data-line-end="13">Applies to prestigious institutions like Stanford University and USC.</li>
+<li class="has-line-data" data-line-start="13" data-line-end="14">Takes effect on September 1, 2025.</li>
+<li class="has-line-data" data-line-start="14" data-line-end="15">Requires annual compliance reports from affected institutions.</li>
+<li class="has-line-data" data-line-start="15" data-line-end="16">Aims to level the playing field for applicants from diverse backgrounds.</li>
+<li class="has-line-data" data-line-start="16" data-line-end="22">Supports Governor Newsom’s broader efforts to improve higher education access, including:
+<ul className="list-disc list-inside pl-4">
+<li class="has-line-data" data-line-start="17" data-line-end="18">Two years of free community college for eligible students.</li>
+<li class="has-line-data" data-line-start="18" data-line-end="19">Expanded financial aid for foster students</li>
+<li class="has-line-data" data-line-start="19" data-line-end="20">Investments in affordable student housing</li>
+<li class="has-line-data" data-line-start="20" data-line-end="22">Initiatives to reduce textbook costs</li>
+</ul>
+</li>
+</ul>
+<p class="has-line-data" data-line-start="22" data-line-end="23">By eliminating preferences based on family connections or wealth, the law seeks to create more equitable admissions processes and increase opportunities for students from all socioeconomic backgrounds to attend California’s top universities</p>
+<h1 className="text-2xl my-3" class="code-line" data-line-start=23 data-line-end=24 ><a id="National_Trend_Against_Legacy_Admissions_23"></a>National Trend Against Legacy Admissions</h1>
+<p class="has-line-data" data-line-start="24" data-line-end="25">The ban in California is part of a growing national trend against legacy admissions. Colorado, Virginia, and Illinois have recently prohibited the practice at public universities, while Maryland joined California in extending the ban to private institutions1. This shift reflects widespread public sentiment, with 75% of Americans believing alumni relationships should not factor into college admissions decisions. The movement gained momentum following the 2019 Varsity Blues scandal and the Supreme Court’s 2023 decision to limit race-based affirmative action. As more states consider similar legislation, including New York and Massachusetts, the practice of legacy admissions faces increasing scrutiny and opposition across the country albums worldwide, solidifying their status as one of the most successful and influential rock bands in history</p>`
+  
   },
   {
     id: 3,

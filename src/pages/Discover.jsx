@@ -21,8 +21,8 @@ const Discover = () => {
           ))}
         </div>
 
-        <div className="hidden md:block col-span-4 relative w-full">
-          <div className=" bg-creame py-2 px-4 rounded-xl">
+        <div className="hidden md:block col-span-4 w-full">
+          <div className=" bg-creame py-2 px-4 rounded-xl sticky top-8">
             <h2 className="text-gray-600 font-semibold leading-loose">
               Make it yours
             </h2>

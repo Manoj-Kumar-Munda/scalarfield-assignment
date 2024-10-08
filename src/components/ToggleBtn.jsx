@@ -21,7 +21,7 @@ const ToggleBtn = () => {
             animate={{ opacity: 100, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ delay: 0.1 }}
-            className="absolute bg-white border rounded-md gap-2 bottom-12 right-14 p-3 max-w-80 w-full"
+            className="hidden sm:block absolute bg-white border rounded-md gap-2 bottom-12 right-14 p-3 max-w-80 w-full"
           >
             <div className="flex flex-col gap-1 items-start">
               <h1 className="text-xl font-medium text-gray-600">
